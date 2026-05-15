@@ -1,5 +1,3 @@
-# Superstore-Analysis
-
 # SuperStore Sales Analytics & Business Intelligence Project
 
 ## Project Overview
@@ -41,7 +39,7 @@ The final deliverable was an executive-style interactive Power BI dashboard desi
 
 ---
 
-# 📂 Project Workflow
+# Project Workflow
 
 The project followed a complete data analytics lifecycle:
 
@@ -65,7 +63,7 @@ Business Insight Generation
 
 ---
 
-# 🧹 Data Cleaning & Preprocessing (Python)
+# Data Cleaning & Preprocessing (Python)
 
 The raw dataset initially contained:
 
@@ -76,15 +74,15 @@ The raw dataset initially contained:
 
 ## Cleaning Activities Performed
 
-### ✅ Duplicate Removal
+###  Duplicate Removal
 
 Duplicate rows were identified and removed using Python and SQL techniques.
 
-### ✅ Missing Value Handling
+###  Missing Value Handling
 
 Null values were inspected and handled appropriately based on business logic.
 
-### ✅ Invalid Shipment Duration Correction
+###  Invalid Shipment Duration Correction
 
 Rows with negative shipment durations were identified and removed.
 
@@ -96,11 +94,11 @@ df['Ship_Duration'] = (df['Ship_Date'] - df['Order_Date']).dt.days
 df = df[df['Ship_Duration'] >= 0]
 ```
 
-### ✅ Data Entry Error Corrections
+###  Data Entry Error Corrections
 
 Incorrect entries and formatting inconsistencies were corrected during preprocessing.
 
-### ✅ Dataset Reduction
+###  Dataset Reduction
 
 After cleaning:
 
@@ -111,7 +109,7 @@ This improved overall data quality and analytical reliability.
 
 ---
 
-# ⚙️ Feature Engineering
+#   Feature Engineering
 
 Several new analytical features were created to improve business insights and dashboard interactivity.
 
@@ -138,7 +136,7 @@ df['Profit_Margin'] = (df['Profit'] / df['Sales']) * 100
 
 ---
 
-# 🗄️ SQL Data Analysis (MySQL)
+# SQL Data Analysis (MySQL)
 
 SQL was used extensively for:
 
@@ -150,7 +148,7 @@ SQL was used extensively for:
 
 ---
 
-# 📌 Database Validation Queries
+# Database Validation Queries
 
 ## Number of Columns
 
@@ -170,7 +168,7 @@ FROM superstore;
 
 ---
 
-# 🔄 Duplicate Removal Using SQL
+#  Duplicate Removal Using SQL
 
 ```sql
 WITH dup AS (
@@ -200,7 +198,7 @@ WHERE rn >= 2
 
 ---
 
-## 1️⃣ Total Revenue
+##  Total Revenue
 
 ```sql
 SELECT ROUND(SUM(Sales),0) AS Total_Revenue
@@ -213,7 +211,7 @@ Generated total business revenue across all transactions.
 
 ---
 
-## 2️⃣ Revenue Growth Over Time
+##  Revenue Growth Over Time
 
 ### Monthly Revenue Growth
 
@@ -247,7 +245,7 @@ Analyzed Month-over-Month sales growth trends.
 
 ---
 
-## 3️⃣ Average Revenue Per Order
+##  Average Revenue Per Order
 
 ```sql
 SELECT ROUND(AVG(Sales),2) AS avg_order_value
@@ -260,7 +258,7 @@ Measured average customer spending per order.
 
 ---
 
-## 4️⃣ Top Performing Products
+##  Top Performing Products
 
 ```sql
 SELECT Product_ID,
@@ -280,7 +278,7 @@ Identified highest revenue-generating products.
 
 ---
 
-## 5️⃣ Sales by Product Category
+## Sales by Product Category
 
 ```sql
 SELECT Category,
@@ -296,7 +294,7 @@ Compared category-level business performance.
 
 ---
 
-## 6️⃣ Customer Acquisition Analysis
+## Customer Acquisition Analysis
 
 ```sql
 SELECT YEAR(order_date) AS Years,
@@ -311,7 +309,7 @@ Tracked customer acquisition trends over time.
 
 ---
 
-## 7️⃣ Customer Retention Rate
+## Customer Retention Rate
 
 ```sql
 SELECT
@@ -337,7 +335,7 @@ Measured percentage of repeat customers.
 
 ---
 
-## 8️⃣ Shipping Performance Analysis
+## Shipping Performance Analysis
 
 ```sql
 SELECT Ship_Mode,
@@ -354,7 +352,7 @@ Evaluated shipping efficiency across shipment modes.
 
 ---
 
-# 📊 Power BI Dashboard Development
+# Power BI Dashboard Development
 
 Interactive dashboards were developed in Power BI to support executive-level business reporting.
 
@@ -391,7 +389,7 @@ Interactive dashboards were developed in Power BI to support executive-level bus
 
 # 📌 Key Business Insights
 
-## 💰 Revenue & Profitability
+## Revenue & Profitability
 
 * Total Sales exceeded **$1.93M**
 * Total Profit exceeded **$506K**
@@ -399,35 +397,35 @@ Interactive dashboards were developed in Power BI to support executive-level bus
 
 ---
 
-## 📦 Shipping Analysis
+## Shipping Analysis
 
 * Standard Class shipping had the highest delivery duration.
 * Faster shipping modes improved customer fulfillment performance.
 
 ---
 
-## 🛍️ Product & Category Insights
+## Product & Category Insights
 
 * Technology products generated significant sales contribution.
 * Office Supplies showed strong profit margins.
 
 ---
 
-## 🌎 Regional Analysis
+## Regional Analysis
 
 * Certain regions consistently outperformed others in profitability.
 * Geographic trends revealed high-performing business zones.
 
 ---
 
-## 👥 Customer Insights
+## Customer Insights
 
 * Repeat customer behavior significantly contributed to revenue generation.
 * Top customers generated substantial portions of total sales.
 
 ---
 
-# 📈 Business Value of the Project
+# Business Value of the Project
 
 This project demonstrates practical expertise in:
 
@@ -445,7 +443,7 @@ The project simulates a real-world analytics workflow used by modern data analys
 
 ---
 
-# 🚀 Skills Demonstrated
+# Skills Demonstrated
 
 ## Technical Skills
 
@@ -469,7 +467,7 @@ The project simulates a real-world analytics workflow used by modern data analys
 
 ---
 
-# 📌 Conclusion
+# Conclusion
 
 This project successfully transformed raw retail transaction data into a business intelligence solution capable of supporting operational and strategic decision-making.
 
@@ -489,6 +487,6 @@ to generate actionable business insights.
 For collaborations, analytics opportunities, or feedback:
 
 **LinkedIn:** [www.linkedin.com/in/olalekan-oluwadare-628356237]
-**Email:** [Olalekanoluwadare20@gmail.com]
+**Email:** [olalekanoluwadare20@gmail.com]
 
 ---
