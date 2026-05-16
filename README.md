@@ -194,7 +194,7 @@ WHERE rn >= 2
 
 ---
 
-# 📈 Key Business Analysis Queries
+# Key Business Analysis Queries
 
 ---
 
@@ -387,7 +387,7 @@ Interactive dashboards were developed in Power BI to support executive-level bus
 
 ---
 
-# 📌 Key Business Insights
+# Key Business Insights
 
 ## Revenue & Profitability
 
